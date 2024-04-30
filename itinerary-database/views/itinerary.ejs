@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Itinerary</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.itinerary-item {
+  margin-bottom: 10px; /* Decrease margin to make day row smaller */
+}
+
+.day-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px; /* Decrease padding to make day row smaller */
+  border-radius: 5px;
+}
+
+.activities {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 0 0 5px 5px;
+}
+
+.activity {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.activity p {
+  margin: 0;
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<h1>Travel Itinerary</h1>
+
+
+  <div class="container">
+    
+  <% for (let i = 1; i <= numberOfDays; i++) { %>
+    <div class="itinerary-item">
+      <div class="day-header">
+        <h2>Day <%= i %></h2>
+      </div>
+      <div class="activities">
+        <% const dayActivities = activitiesByDay[i] || []; %>
+        <% if (dayActivities.length > 0) { %>
+          <% dayActivities.forEach(activity => { %>
+            <div class="activity">
+              <h3><%= activity.activity_name %></h3>
+              <!-- Render other details about the activity -->
+            </div>
+          <% }); %>
+        <% } else { %>
+          <p>No activities planned for this day</p>
+        <% } %>
+      </div>
+    </div>
+  <% } %>
+</div>
+
+</body>
+</html>

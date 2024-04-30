@@ -1,0 +1,83 @@
+/* Reset default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox styles for centering the form */
+body {
+  /* Background color of the body */
+  background-image: url('img/back4.png');
+  background-size: cover;
+  background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+
+/* Registration form container */
+.registration-form {
+     /* Add your background image URL here */
+   
+    background-color: (0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px; /* Adjust the maximum width of the form */
+    width: 100%;
+    margin-bottom: 20px; /* Space between form and "Already have an account?" line */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Form fields */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000; /* Text color */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #ffcc00; /* Link color */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

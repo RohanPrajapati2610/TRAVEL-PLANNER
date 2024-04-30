@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox styles for centering the form */
+body {
+    /* Background color of the body */
+    background-image: url('img/back3.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+
+/* Registration form container */
+.registration-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px; /* Decrease padding for smaller size */
+    border-radius: 10px;
+    max-width: 300px; /* Decrease maximum width for smaller size */
+    width: 100%;
+    margin-bottom: 20px; /* Space between form and "Already have an account?" line */
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00; /* Change color of the title */
+    font-size: 20px; /* Decrease font size */
+}
+
+/* Form fields */
+label {
+    display: block;
+    margin-bottom: 10px; /* Decrease margin for less spacing */
+    color: #ffcc00; /* Change color of labels */
+    font-size: 14px; /* Decrease font size */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px; /* Decrease padding for smaller size */
+    margin-bottom: 15px; /* Decrease margin for less spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000; /* Text color */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px; /* Decrease padding for smaller size */
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px; /* Decrease margin for less spacing */
+    color: #ffcc00; /* Change color of paragraph text */
+    font-size: 12px; /* Decrease font size */
+}
+
+p a {
+    color: #ffcc00; /* Link color */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
